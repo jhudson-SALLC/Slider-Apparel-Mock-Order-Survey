@@ -233,7 +233,7 @@ function renderDesigns() {
 
     const price = document.createElement("p");
     price.className = "price";
-    price.textContent = `Style: ${style || "—"}  |  Wholesale: ${money(ppu)} PPU  |  Suggested MSRP: ${money(msrp)}`;
+    price.textContent = `Style: ${style || "—"}  |  Wholesale: ${money(ppu)} PPU  |  Suggested MSRP: $35–$40`;
 
     const actions = document.createElement("div");
     actions.className = "card-actions";
