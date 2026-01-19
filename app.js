@@ -288,7 +288,7 @@ function renderCartSummary() {
 
   elCartTotals.style.display = "flex";
   elTotalWholesale.textContent = money(wholesaleTotal);
-  elTotalMsrp.textContent = money(msrpTotal);
+  elTotalMsrp.textContent = "Varies ($35–$40)";
 
   lines.forEach((it) => {
     const row = document.createElement("div");
