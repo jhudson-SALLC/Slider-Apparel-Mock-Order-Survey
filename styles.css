@@ -36,3 +36,28 @@ h2{margin:0;font-size:16px;}
   .cards{grid-template-columns:repeat(2, minmax(0, 1fr));}
   .form-grid{grid-template-columns:1fr;}
 }
+.cart-row{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  gap:10px;
+  align-items:center;
+}
+.cart-meta{
+  color:var(--m);
+  font-size:12px;
+  margin-top:4px;
+}
+.cart-actions{
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+.cart-actions input{ width:90px; }
+.small-btn{
+  padding:8px 10px;
+  border-radius:10px;
+  border:1px solid #2d3550;
+  background:transparent;
+  color:var(--t);
+  cursor:pointer;
+}
