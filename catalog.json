@@ -1,25 +1,250 @@
 {
   "Alabama": {
+    "Auburn University": [
+      { "design_id": "AL-AUB-CORE", "design_name": "Auburn University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
     "University of Alabama": [
-      { "design_id": "AL-UA-S1-01", "design_name": "Alabama – Script Patch (S1)", "wholesale": 14, "msrp": 30 },
-      { "design_id": "AL-UA-S3-01", "design_name": "Alabama – Rope Trucker (S3)", "wholesale": 15, "msrp": 32 }
+      { "design_id": "AL-UA-CORE", "design_name": "University of Alabama – Core Hat", "wholesale": 14, "msrp": 30 }
     ]
   },
+
+  "Arizona": {
+    "Northern Arizona University": [
+      { "design_id": "AZ-NAU-CORE", "design_name": "Northern Arizona University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Arizona": [
+      { "design_id": "AZ-UA-CORE", "design_name": "University of Arizona – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Arkansas": {
+    "University of Arkansas": [
+      { "design_id": "AR-UARK-CORE", "design_name": "University of Arkansas – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "California": {
+    "Mount Saint Mary’s University": [
+      { "design_id": "CA-MSMU-CORE", "design_name": "Mount Saint Mary’s University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "UC Berkeley": [
+      { "design_id": "CA-UCB-CORE", "design_name": "UC Berkeley – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "UC Davis": [
+      { "design_id": "CA-UCD-CORE", "design_name": "UC Davis – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "UCLA": [
+      { "design_id": "CA-UCLA-CORE", "design_name": "UCLA – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Southern California": [
+      { "design_id": "CA-USC-CORE", "design_name": "University of Southern California – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Colorado": {
+    "Colorado State University": [
+      { "design_id": "CO-CSU-CORE", "design_name": "Colorado State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Colorado Boulder": [
+      { "design_id": "CO-UCB-CORE", "design_name": "University of Colorado Boulder – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Connecticut": {
+    "Eastern Connecticut State University": [
+      { "design_id": "CT-ECSU-CORE", "design_name": "Eastern Connecticut State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Connecticut": [
+      { "design_id": "CT-UCONN-CORE", "design_name": "University of Connecticut – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Florida": {
+    "Florida A&M University": [
+      { "design_id": "FL-FAMU-CORE", "design_name": "Florida A&M University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "Florida State University": [
+      { "design_id": "FL-FSU-CORE", "design_name": "Florida State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Central Florida": [
+      { "design_id": "FL-UCF-CORE", "design_name": "University of Central Florida – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Florida": [
+      { "design_id": "FL-UF-CORE", "design_name": "University of Florida – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Miami": [
+      { "design_id": "FL-UM-CORE", "design_name": "University of Miami – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of South Florida": [
+      { "design_id": "FL-USF-CORE", "design_name": "University of South Florida – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Georgia": {
+    "Georgia Institute of Technology": [
+      { "design_id": "GA-GT-CORE", "design_name": "Georgia Institute of Technology – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "Georgia State University": [
+      { "design_id": "GA-GSU-CORE", "design_name": "Georgia State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Georgia": [
+      { "design_id": "GA-UGA-CORE", "design_name": "University of Georgia – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Illinois": {
+    "University of Illinois": [
+      { "design_id": "IL-UIUC-CORE", "design_name": "University of Illinois – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Indiana": {
+    "Purdue University": [
+      { "design_id": "IN-PURDUE-CORE", "design_name": "Purdue University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Kentucky": {
+    "University of Louisville": [
+      { "design_id": "KY-UL-CORE", "design_name": "University of Louisville – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Louisiana": {
+    "Louisiana State University": [
+      { "design_id": "LA-LSU-CORE", "design_name": "Louisiana State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Maryland": {
+    "University of Maryland": [
+      { "design_id": "MD-UMD-CORE", "design_name": "University of Maryland – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Massachusetts": {
+    "University at Massachusetts": [
+      { "design_id": "MA-UMASS-CORE", "design_name": "University at Massachusetts – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Michigan": {
+    "University of Michigan": [
+      { "design_id": "MI-UMICH-CORE", "design_name": "University of Michigan – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Minnesota": {
+    "University of Minnesota": [
+      { "design_id": "MN-UMN-CORE", "design_name": "University of Minnesota – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Mississippi": {
+    "Mississippi State University": [
+      { "design_id": "MS-MSU-CORE", "design_name": "Mississippi State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Mississippi": [
+      { "design_id": "MS-OLEMISS-CORE", "design_name": "University of Mississippi – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Missouri": {
+    "University of Missouri": [
+      { "design_id": "MO-MIZZOU-CORE", "design_name": "University of Missouri – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Nevada": {
+    "Univeristy of Nevada": [
+      { "design_id": "NV-UNR-CORE", "design_name": "Univeristy of Nevada – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "New Jersey": {
+    "Rutgers": [
+      { "design_id": "NJ-RUTGERS-CORE", "design_name": "Rutgers – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "New York": {
+    "University at Buffalo": [
+      { "design_id": "NY-UB-CORE", "design_name": "University at Buffalo – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "North Carolina": {
+    "North Carolina State University": [
+      { "design_id": "NC-NCSU-CORE", "design_name": "North Carolina State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of North Carolina": [
+      { "design_id": "NC-UNC-CORE", "design_name": "University of North Carolina – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
   "Oregon": {
     "Oregon State University": [
-      { "design_id": "OR-OSU-S1-01", "design_name": "Oregon State – Beaver Patch (S1)", "wholesale": 14, "msrp": 30 },
-      { "design_id": "OR-OSU-S4-01", "design_name": "Oregon State – Retro Wordmark (S4)", "wholesale": 14, "msrp": 30 }
+      { "design_id": "OR-OSU-CORE", "design_name": "Oregon State University – Core Hat", "wholesale": 14, "msrp": 30 }
     ],
     "University of Oregon": [
-      { "design_id": "OR-UO-S2-01", "design_name": "Oregon – Classic O (S2)", "wholesale": 14, "msrp": 30 }
+      { "design_id": "OR-UO-CORE", "design_name": "University of Oregon – Core Hat", "wholesale": 14, "msrp": 30 }
     ]
   },
+
+  "Pennsylvania": {
+    "Drexel University": [
+      { "design_id": "PA-DREXEL-CORE", "design_name": "Drexel University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "Pennsylvania State University": [
+      { "design_id": "PA-PSU-CORE", "design_name": "Pennsylvania State University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Pennsylvania": [
+      { "design_id": "PA-UPENN-CORE", "design_name": "University of Pennsylvania – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "South Carolina": {
+    "Clemson University": [
+      { "design_id": "SC-CLEMSON-CORE", "design_name": "Clemson University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of South Carolina": [
+      { "design_id": "SC-USC-CORE", "design_name": "University of South Carolina – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Tennessee": {
+    "University of Tennessee": [
+      { "design_id": "TN-UT-CORE", "design_name": "University of Tennessee – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
   "Texas": {
     "Texas A&M University": [
-      { "design_id": "TX-TAMU-S1-01", "design_name": "Texas A&M – Maroon Patch (S1)", "wholesale": 14, "msrp": 30 }
+      { "design_id": "TX-TAMU-CORE", "design_name": "Texas A&M University – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "Texas State Univeristy": [
+      { "design_id": "TX-TXST-CORE", "design_name": "Texas State Univeristy – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "Texas Tech Univeristy": [
+      { "design_id": "TX-TTU-CORE", "design_name": "Texas Tech Univeristy – Core Hat", "wholesale": 14, "msrp": 30 }
     ],
     "University of Texas at Austin": [
-      { "design_id": "TX-UTA-S3-01", "design_name": "Texas – Longhorn Rope (S3)", "wholesale": 15, "msrp": 32 }
+      { "design_id": "TX-UTA-CORE", "design_name": "University of Texas at Austin – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Virginia": {
+    "University of Virginia": [
+      { "design_id": "VA-UVA-CORE", "design_name": "University of Virginia – Core Hat", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+
+  "Washington": {
+    "University of Washington": [
+      { "design_id": "WA-UW-CORE", "design_name": "University of Washington – Core Hat", "wholesale": 14, "msrp": 30 }
+    ],
+    "Washington State University": [
+      { "design_id": "WA-WSU-CORE", "design_name": "Washington State University – Core Hat", "wholesale": 14, "msrp": 30 }
     ]
   }
 }
