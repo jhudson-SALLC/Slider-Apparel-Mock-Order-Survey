@@ -1,250 +1,363 @@
 {
   "Alabama": {
     "Auburn University": [
-      { "design_id": "AL-AUB-CORE", "design_name": "Auburn University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "AL-AUB-S1", "design_name": "Auburn University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AL-AUB-S2", "design_name": "Auburn University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AL-AUB-S3", "design_name": "Auburn University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Alabama": [
-      { "design_id": "AL-UA-CORE", "design_name": "University of Alabama – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "AL-UA-S1", "design_name": "University of Alabama – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AL-UA-S2", "design_name": "University of Alabama – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AL-UA-S3", "design_name": "University of Alabama – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Arizona": {
     "Northern Arizona University": [
-      { "design_id": "AZ-NAU-CORE", "design_name": "Northern Arizona University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "AZ-NAU-S1", "design_name": "Northern Arizona University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AZ-NAU-S2", "design_name": "Northern Arizona University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AZ-NAU-S3", "design_name": "Northern Arizona University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Arizona": [
-      { "design_id": "AZ-UA-CORE", "design_name": "University of Arizona – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "AZ-UA-S1", "design_name": "University of Arizona – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AZ-UA-S2", "design_name": "University of Arizona – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AZ-UA-S3", "design_name": "University of Arizona – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Arkansas": {
     "University of Arkansas": [
-      { "design_id": "AR-UARK-CORE", "design_name": "University of Arkansas – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "AR-UARK-S1", "design_name": "University of Arkansas – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AR-UARK-S2", "design_name": "University of Arkansas – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "AR-UARK-S3", "design_name": "University of Arkansas – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "California": {
     "Mount Saint Mary’s University": [
-      { "design_id": "CA-MSMU-CORE", "design_name": "Mount Saint Mary’s University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CA-MSMU-S1", "design_name": "Mount Saint Mary’s University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-MSMU-S2", "design_name": "Mount Saint Mary’s University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-MSMU-S3", "design_name": "Mount Saint Mary’s University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "UC Berkeley": [
-      { "design_id": "CA-UCB-CORE", "design_name": "UC Berkeley – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CA-UCB-S1", "design_name": "UC Berkeley – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-UCB-S2", "design_name": "UC Berkeley – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-UCB-S3", "design_name": "UC Berkeley – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "UC Davis": [
-      { "design_id": "CA-UCD-CORE", "design_name": "UC Davis – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CA-UCD-S1", "design_name": "UC Davis – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-UCD-S2", "design_name": "UC Davis – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-UCD-S3", "design_name": "UC Davis – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "UCLA": [
-      { "design_id": "CA-UCLA-CORE", "design_name": "UCLA – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CA-UCLA-S1", "design_name": "UCLA – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-UCLA-S2", "design_name": "UCLA – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-UCLA-S3", "design_name": "UCLA – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Southern California": [
-      { "design_id": "CA-USC-CORE", "design_name": "University of Southern California – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CA-USC-S1", "design_name": "University of Southern California – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-USC-S2", "design_name": "University of Southern California – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CA-USC-S3", "design_name": "University of Southern California – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Colorado": {
     "Colorado State University": [
-      { "design_id": "CO-CSU-CORE", "design_name": "Colorado State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CO-CSU-S1", "design_name": "Colorado State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CO-CSU-S2", "design_name": "Colorado State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CO-CSU-S3", "design_name": "Colorado State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Colorado Boulder": [
-      { "design_id": "CO-UCB-CORE", "design_name": "University of Colorado Boulder – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CO-UCB-S1", "design_name": "University of Colorado Boulder – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CO-UCB-S2", "design_name": "University of Colorado Boulder – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CO-UCB-S3", "design_name": "University of Colorado Boulder – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Connecticut": {
     "Eastern Connecticut State University": [
-      { "design_id": "CT-ECSU-CORE", "design_name": "Eastern Connecticut State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CT-ECSU-S1", "design_name": "Eastern Connecticut State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CT-ECSU-S2", "design_name": "Eastern Connecticut State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CT-ECSU-S3", "design_name": "Eastern Connecticut State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Connecticut": [
-      { "design_id": "CT-UCONN-CORE", "design_name": "University of Connecticut – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "CT-UCONN-S1", "design_name": "University of Connecticut – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CT-UCONN-S2", "design_name": "University of Connecticut – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "CT-UCONN-S3", "design_name": "University of Connecticut – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Florida": {
     "Florida A&M University": [
-      { "design_id": "FL-FAMU-CORE", "design_name": "Florida A&M University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "FL-FAMU-S1", "design_name": "Florida A&M University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-FAMU-S2", "design_name": "Florida A&M University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-FAMU-S3", "design_name": "Florida A&M University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "Florida State University": [
-      { "design_id": "FL-FSU-CORE", "design_name": "Florida State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "FL-FSU-S1", "design_name": "Florida State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-FSU-S2", "design_name": "Florida State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-FSU-S3", "design_name": "Florida State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Central Florida": [
-      { "design_id": "FL-UCF-CORE", "design_name": "University of Central Florida – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "FL-UCF-S1", "design_name": "University of Central Florida – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-UCF-S2", "design_name": "University of Central Florida – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-UCF-S3", "design_name": "University of Central Florida – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Florida": [
-      { "design_id": "FL-UF-CORE", "design_name": "University of Florida – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "FL-UF-S1", "design_name": "University of Florida – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-UF-S2", "design_name": "University of Florida – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-UF-S3", "design_name": "University of Florida – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Miami": [
-      { "design_id": "FL-UM-CORE", "design_name": "University of Miami – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "FL-UM-S1", "design_name": "University of Miami – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-UM-S2", "design_name": "University of Miami – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-UM-S3", "design_name": "University of Miami – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of South Florida": [
-      { "design_id": "FL-USF-CORE", "design_name": "University of South Florida – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "FL-USF-S1", "design_name": "University of South Florida – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-USF-S2", "design_name": "University of South Florida – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "FL-USF-S3", "design_name": "University of South Florida – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Georgia": {
     "Georgia Institute of Technology": [
-      { "design_id": "GA-GT-CORE", "design_name": "Georgia Institute of Technology – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "GA-GT-S1", "design_name": "Georgia Institute of Technology – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "GA-GT-S2", "design_name": "Georgia Institute of Technology – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "GA-GT-S3", "design_name": "Georgia Institute of Technology – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "Georgia State University": [
-      { "design_id": "GA-GSU-CORE", "design_name": "Georgia State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "GA-GSU-S1", "design_name": "Georgia State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "GA-GSU-S2", "design_name": "Georgia State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "GA-GSU-S3", "design_name": "Georgia State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Georgia": [
-      { "design_id": "GA-UGA-CORE", "design_name": "University of Georgia – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "GA-UGA-S1", "design_name": "University of Georgia – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "GA-UGA-S2", "design_name": "University of Georgia – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "GA-UGA-S3", "design_name": "University of Georgia – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Illinois": {
     "University of Illinois": [
-      { "design_id": "IL-UIUC-CORE", "design_name": "University of Illinois – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "IL-UIUC-S1", "design_name": "University of Illinois – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "IL-UIUC-S2", "design_name": "University of Illinois – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "IL-UIUC-S3", "design_name": "University of Illinois – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Indiana": {
     "Purdue University": [
-      { "design_id": "IN-PURDUE-CORE", "design_name": "Purdue University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "IN-PUR-S1", "design_name": "Purdue University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "IN-PUR-S2", "design_name": "Purdue University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "IN-PUR-S3", "design_name": "Purdue University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Kentucky": {
     "University of Louisville": [
-      { "design_id": "KY-UL-CORE", "design_name": "University of Louisville – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "KY-UL-S1", "design_name": "University of Louisville – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "KY-UL-S2", "design_name": "University of Louisville – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "KY-UL-S3", "design_name": "University of Louisville – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Louisiana": {
     "Louisiana State University": [
-      { "design_id": "LA-LSU-CORE", "design_name": "Louisiana State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "LA-LSU-S1", "design_name": "Louisiana State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "LA-LSU-S2", "design_name": "Louisiana State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "LA-LSU-S3", "design_name": "Louisiana State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Maryland": {
     "University of Maryland": [
-      { "design_id": "MD-UMD-CORE", "design_name": "University of Maryland – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "MD-UMD-S1", "design_name": "University of Maryland – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MD-UMD-S2", "design_name": "University of Maryland – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MD-UMD-S3", "design_name": "University of Maryland – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Massachusetts": {
     "University at Massachusetts": [
-      { "design_id": "MA-UMASS-CORE", "design_name": "University at Massachusetts – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "MA-UMASS-S1", "design_name": "University at Massachusetts – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MA-UMASS-S2", "design_name": "University at Massachusetts – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MA-UMASS-S3", "design_name": "University at Massachusetts – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Michigan": {
     "University of Michigan": [
-      { "design_id": "MI-UMICH-CORE", "design_name": "University of Michigan – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "MI-UMICH-S1", "design_name": "University of Michigan – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MI-UMICH-S2", "design_name": "University of Michigan – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MI-UMICH-S3", "design_name": "University of Michigan – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Minnesota": {
     "University of Minnesota": [
-      { "design_id": "MN-UMN-CORE", "design_name": "University of Minnesota – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "MN-UMN-S1", "design_name": "University of Minnesota – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MN-UMN-S2", "design_name": "University of Minnesota – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MN-UMN-S3", "design_name": "University of Minnesota – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Mississippi": {
     "Mississippi State University": [
-      { "design_id": "MS-MSU-CORE", "design_name": "Mississippi State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "MS-MSU-S1", "design_name": "Mississippi State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MS-MSU-S2", "design_name": "Mississippi State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MS-MSU-S3", "design_name": "Mississippi State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Mississippi": [
-      { "design_id": "MS-OLEMISS-CORE", "design_name": "University of Mississippi – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "MS-OLEMISS-S1", "design_name": "University of Mississippi – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MS-OLEMISS-S2", "design_name": "University of Mississippi – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MS-OLEMISS-S3", "design_name": "University of Mississippi – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Missouri": {
     "University of Missouri": [
-      { "design_id": "MO-MIZZOU-CORE", "design_name": "University of Missouri – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "MO-MIZ-S1", "design_name": "University of Missouri – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MO-MIZ-S2", "design_name": "University of Missouri – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "MO-MIZ-S3", "design_name": "University of Missouri – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Nevada": {
     "Univeristy of Nevada": [
-      { "design_id": "NV-UNR-CORE", "design_name": "Univeristy of Nevada – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "NV-UNR-S1", "design_name": "Univeristy of Nevada – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NV-UNR-S2", "design_name": "Univeristy of Nevada – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NV-UNR-S3", "design_name": "Univeristy of Nevada – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "New Jersey": {
     "Rutgers": [
-      { "design_id": "NJ-RUTGERS-CORE", "design_name": "Rutgers – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "NJ-RUT-S1", "design_name": "Rutgers – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NJ-RUT-S2", "design_name": "Rutgers – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NJ-RUT-S3", "design_name": "Rutgers – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "New York": {
     "University at Buffalo": [
-      { "design_id": "NY-UB-CORE", "design_name": "University at Buffalo – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "NY-UB-S1", "design_name": "University at Buffalo – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NY-UB-S2", "design_name": "University at Buffalo – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NY-UB-S3", "design_name": "University at Buffalo – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
+    ],
+    "University of Syracuse": [
+      { "design_id": "NY-SYR-S1", "design_name": "University of Syracuse – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NY-SYR-S2", "design_name": "University of Syracuse – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NY-SYR-S3", "design_name": "University of Syracuse – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "North Carolina": {
     "North Carolina State University": [
-      { "design_id": "NC-NCSU-CORE", "design_name": "North Carolina State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "NC-NCSU-S1", "design_name": "North Carolina State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NC-NCSU-S2", "design_name": "North Carolina State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NC-NCSU-S3", "design_name": "North Carolina State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of North Carolina": [
-      { "design_id": "NC-UNC-CORE", "design_name": "University of North Carolina – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "NC-UNC-S1", "design_name": "University of North Carolina – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NC-UNC-S2", "design_name": "University of North Carolina – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "NC-UNC-S3", "design_name": "University of North Carolina – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Oregon": {
     "Oregon State University": [
-      { "design_id": "OR-OSU-CORE", "design_name": "Oregon State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "OR-OSU-S1", "design_name": "Oregon State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "OR-OSU-S2", "design_name": "Oregon State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "OR-OSU-S3", "design_name": "Oregon State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Oregon": [
-      { "design_id": "OR-UO-CORE", "design_name": "University of Oregon – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "OR-UO-S1", "design_name": "University of Oregon – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "OR-UO-S2", "design_name": "University of Oregon – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "OR-UO-S3", "design_name": "University of Oregon – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Pennsylvania": {
     "Drexel University": [
-      { "design_id": "PA-DREXEL-CORE", "design_name": "Drexel University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "PA-DREX-S1", "design_name": "Drexel University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "PA-DREX-S2", "design_name": "Drexel University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "PA-DREX-S3", "design_name": "Drexel University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "Pennsylvania State University": [
-      { "design_id": "PA-PSU-CORE", "design_name": "Pennsylvania State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "PA-PSU-S1", "design_name": "Pennsylvania State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "PA-PSU-S2", "design_name": "Pennsylvania State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "PA-PSU-S3", "design_name": "Pennsylvania State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Pennsylvania": [
-      { "design_id": "PA-UPENN-CORE", "design_name": "University of Pennsylvania – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "PA-UPENN-S1", "design_name": "University of Pennsylvania – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "PA-UPENN-S2", "design_name": "University of Pennsylvania – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "PA-UPENN-S3", "design_name": "University of Pennsylvania – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "South Carolina": {
     "Clemson University": [
-      { "design_id": "SC-CLEMSON-CORE", "design_name": "Clemson University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "SC-CLEM-S1", "design_name": "Clemson University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "SC-CLEM-S2", "design_name": "Clemson University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "SC-CLEM-S3", "design_name": "Clemson University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of South Carolina": [
-      { "design_id": "SC-USC-CORE", "design_name": "University of South Carolina – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "SC-USC-S1", "design_name": "University of South Carolina – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "SC-USC-S2", "design_name": "University of South Carolina – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "SC-USC-S3", "design_name": "University of South Carolina – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Tennessee": {
     "University of Tennessee": [
-      { "design_id": "TN-UT-CORE", "design_name": "University of Tennessee – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "TN-UT-S1", "design_name": "University of Tennessee – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TN-UT-S2", "design_name": "University of Tennessee – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TN-UT-S3", "design_name": "University of Tennessee – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Texas": {
     "Texas A&M University": [
-      { "design_id": "TX-TAMU-CORE", "design_name": "Texas A&M University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "TX-TAMU-S1", "design_name": "Texas A&M University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-TAMU-S2", "design_name": "Texas A&M University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-TAMU-S3", "design_name": "Texas A&M University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "Texas State Univeristy": [
-      { "design_id": "TX-TXST-CORE", "design_name": "Texas State Univeristy – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "TX-TXST-S1", "design_name": "Texas State Univeristy – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-TXST-S2", "design_name": "Texas State Univeristy – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-TXST-S3", "design_name": "Texas State Univeristy – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "Texas Tech Univeristy": [
-      { "design_id": "TX-TTU-CORE", "design_name": "Texas Tech Univeristy – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "TX-TTU-S1", "design_name": "Texas Tech Univeristy – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-TTU-S2", "design_name": "Texas Tech Univeristy – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-TTU-S3", "design_name": "Texas Tech Univeristy – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "University of Texas at Austin": [
-      { "design_id": "TX-UTA-CORE", "design_name": "University of Texas at Austin – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "TX-UT-S1", "design_name": "University of Texas at Austin – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-UT-S2", "design_name": "University of Texas at Austin – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "TX-UT-S3", "design_name": "University of Texas at Austin – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Virginia": {
     "University of Virginia": [
-      { "design_id": "VA-UVA-CORE", "design_name": "University of Virginia – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "VA-UVA-S1", "design_name": "University of Virginia – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "VA-UVA-S2", "design_name": "University of Virginia – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "VA-UVA-S3", "design_name": "University of Virginia – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   },
 
   "Washington": {
     "University of Washington": [
-      { "design_id": "WA-UW-CORE", "design_name": "University of Washington – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "WA-UW-S1", "design_name": "University of Washington – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "WA-UW-S2", "design_name": "University of Washington – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "WA-UW-S3", "design_name": "University of Washington – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ],
     "Washington State University": [
-      { "design_id": "WA-WSU-CORE", "design_name": "Washington State University – Core Hat", "wholesale": 14, "msrp": 30 }
+      { "design_id": "WA-WSU-S1", "design_name": "Washington State University – S1", "style": "S1", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "WA-WSU-S2", "design_name": "Washington State University – S2", "style": "S2", "msrp_low": 35, "msrp_high": 40 },
+      { "design_id": "WA-WSU-S3", "design_name": "Washington State University – S3", "style": "S3", "msrp_low": 35, "msrp_high": 40 }
     ]
   }
 }
