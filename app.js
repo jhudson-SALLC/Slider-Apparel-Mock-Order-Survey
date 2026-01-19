@@ -1,4 +1,4 @@
-// 1) Paste your Google Apps Script Web App URL here later:
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwOi0sN4M2FKAcHk-ROGSjMj6dzypGbCZZaR9NfoS7aFUhQgC4AyZvded4WpqHrYk4Eow/exec";
 const SCRIPT_URL = "SCRIPT_URL_HERE";
 
 // State
