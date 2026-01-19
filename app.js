@@ -18,9 +18,7 @@ function getWholesalePPU(design, qty) {
   const table = WHOLESALE[style];
   if (table && table[qty] != null) return Number(table[qty]);
 
-  // Fallback: if you left wholesale in catalog.json, use it
-  if (design.wholesale != null) return Number(design.wholesale);
-
+  // If style is missing, show 0 so we notice and fix catalog.json
   return 0;
 }
 
