@@ -1,21 +1,37 @@
-// Slider Mock Order App (Clean Build)
+// Slider Mock Order App (S1–S3 pricing + fixed qty dropdowns)
 
-// ✅ Your Google Apps Script Web App URL:
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbwOi0sN4M2FKAcHk-ROGSjMj6dzypGbCZZaR9NfoS7aFUhQgC4AyZvded4WpqHrYk4Eow/exec";
 
-// Fixed quantity options (no custom quantities)
+// Allowed quantities only
 const QTY_OPTIONS = [0, 25, 50, 72, 100, 150, 200, 250];
 
-// App state
+// Wholesale pricing (PPU) by style + qty
+const WHOLESALE = {
+  S1: { 25: 18.5, 50: 15.75, 72: 14.75, 100: 13.75, 150: 12.75, 200: 11.75, 250: 11.5 },
+  S2: { 25: 25.0, 50: 18.0, 72: 16.75, 100: 15.75, 150: 14.75, 200: 13.75, 250: 13.5 },
+  S3: { 25: 20.0, 50: 17.0, 72: 16.0, 100: 15.0, 150: 14.0, 200: 13.25, 250: 13.0 }
+};
+
+function getWholesalePPU(design, qty) {
+  const style = String(design.style || "").toUpperCase().trim();
+  const table = WHOLESALE[style];
+  if (table && table[qty] != null) return Number(table[qty]);
+
+  // Fallback: if you left wholesale in catalog.json, use it
+  if (design.wholesale != null) return Number(design.wholesale);
+
+  return 0;
+}
+
 let catalog = {};
 let selectedState = null;
 let selectedSchool = null;
 
-// Cart: design_id -> item
+// Cart: design_id -> { state, school, design_id, design_name, style, qty, wholesale_ppu, msrp }
 const cart = new Map();
 
-// Elements (must exist in index.html)
+// Elements
 const elStates = document.getElementById("states");
 const elSchools = document.getElementById("schools");
 const elDesigns = document.getElementById("designs");
@@ -41,9 +57,7 @@ const elSubmitBtn = document.getElementById("submitBtn");
 const elGoToCartBtn = document.getElementById("goToCartBtn");
 const elCartAnchor = document.getElementById("cartAnchor");
 
-// ---------------- Utilities ----------------
 function setStatus(msg) {
-  if (!elStatus) return;
   elStatus.textContent = msg || "";
 }
 
@@ -53,11 +67,7 @@ function sortedKeys(obj) {
 
 function money(n) {
   const x = Number(n || 0);
-  return x.toLocaleString(undefined, {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0
-  });
+  return x.toLocaleString(undefined, { style: "currency", currency: "USD", maximumFractionDigits: 2 });
 }
 
 function cartLines() {
@@ -65,7 +75,6 @@ function cartLines() {
 }
 
 function updateCartPill() {
-  if (!elCartPill) return;
   const lines = cartLines();
   const totalQty = lines.reduce((sum, i) => sum + Number(i.qty || 0), 0);
   elCartPill.textContent = `${lines.length} lines • ${totalQty} total qty`;
@@ -87,13 +96,9 @@ function makeQtySelect(currentQty, onChange) {
   return sel;
 }
 
-// ---------------- Render: States ----------------
 function renderStates(filter = "") {
   elStates.innerHTML = "";
-
-  const keys = sortedKeys(catalog).filter((s) =>
-    s.toLowerCase().includes(filter.toLowerCase())
-  );
+  const keys = sortedKeys(catalog).filter((s) => s.toLowerCase().includes(filter.toLowerCase()));
 
   if (!keys.length) {
     const div = document.createElement("div");
@@ -112,24 +117,21 @@ function renderStates(filter = "") {
   });
 }
 
-// ---------------- Render: Schools ----------------
 function renderSchools(filter = "") {
   elSchools.innerHTML = "";
 
   if (!selectedState) {
     elSchools.classList.add("muted");
     elSchools.textContent = "Select a state";
-    if (elSchoolSearch) elSchoolSearch.disabled = true;
+    elSchoolSearch.disabled = true;
     return;
   }
 
   elSchools.classList.remove("muted");
-  if (elSchoolSearch) elSchoolSearch.disabled = false;
+  elSchoolSearch.disabled = false;
 
   const schoolsObj = catalog[selectedState] || {};
-  const schools = sortedKeys(schoolsObj).filter((s) =>
-    s.toLowerCase().includes(filter.toLowerCase())
-  );
+  const schools = sortedKeys(schoolsObj).filter((s) => s.toLowerCase().includes(filter.toLowerCase()));
 
   if (!schools.length) {
     const div = document.createElement("div");
@@ -148,52 +150,52 @@ function renderSchools(filter = "") {
   });
 }
 
-// ---------------- Selection ----------------
 function selectState(state) {
   selectedState = state;
   selectedSchool = null;
 
-  if (elStateCrumb) elStateCrumb.textContent = `Selected state: ${state}`;
-  if (elSchoolCrumb) elSchoolCrumb.textContent = "No school selected";
+  elStateCrumb.textContent = `Selected state: ${state}`;
+  elSchoolCrumb.textContent = "No school selected";
 
-  renderStates(elStateSearch ? elStateSearch.value : "");
-  renderSchools(elSchoolSearch ? elSchoolSearch.value : "");
+  renderStates(elStateSearch.value);
+  renderSchools(elSchoolSearch.value);
   renderDesigns();
   setStatus("");
 }
 
 function selectSchool(school) {
   selectedSchool = school;
-
-  if (elSchoolCrumb) elSchoolCrumb.textContent = `Selected school: ${school}`;
-
-  renderSchools(elSchoolSearch ? elSchoolSearch.value : "");
+  elSchoolCrumb.textContent = `Selected school: ${school}`;
+  renderSchools(elSchoolSearch.value);
   renderDesigns();
   setStatus("");
 }
 
-// ---------------- Cart helpers ----------------
-function upsertCartItemFromDesign(design, qty) {
+function upsertCartFromDesign(design, qty) {
   if (qty === 0) {
     cart.delete(design.design_id);
     return;
   }
+
+  const wholesale_ppu = getWholesalePPU(design, qty);
+  const msrp = Number(design.msrp || 0);
 
   cart.set(design.design_id, {
     state: selectedState || "",
     school: selectedSchool || "",
     design_id: design.design_id,
     design_name: design.design_name,
-    wholesale: Number(design.wholesale || 0),
-    msrp: Number(design.msrp || 0),
-    qty: Number(qty || 0)
+    style: String(design.style || "").toUpperCase(),
+    qty,
+    wholesale_ppu,
+    msrp
   });
 }
 
 function addToCart(design) {
   const existing = cart.get(design.design_id);
-  const qty = existing?.qty ?? 25; // default add qty
-  upsertCartItemFromDesign(design, qty);
+  const qty = existing?.qty ?? 25;
+  upsertCartFromDesign(design, qty);
 
   updateCartPill();
   renderCartSummary();
@@ -201,7 +203,6 @@ function addToCart(design) {
   setStatus("Added to cart ✅");
 }
 
-// ---------------- Render: Designs ----------------
 function renderDesigns() {
   elDesigns.innerHTML = "";
 
@@ -227,9 +228,14 @@ function renderDesigns() {
     const title = document.createElement("h4");
     title.textContent = d.design_name;
 
+    const style = String(d.style || "").toUpperCase();
+    const currentQty = cart.get(d.design_id)?.qty ?? 0;
+    const ppu = currentQty ? getWholesalePPU(d, currentQty) : getWholesalePPU(d, 50);
+    const msrp = Number(d.msrp || 0);
+
     const price = document.createElement("p");
     price.className = "price";
-    price.textContent = `Wholesale: $${d.wholesale}  |  Suggested MSRP: $${d.msrp}`;
+    price.textContent = `Style: ${style || "—"}  |  Wholesale: ${money(ppu)} PPU  |  Suggested MSRP: ${money(msrp)}`;
 
     const actions = document.createElement("div");
     actions.className = "card-actions";
@@ -240,9 +246,9 @@ function renderDesigns() {
     btn.textContent = cart.has(d.design_id) ? "In Cart" : "Add to Cart";
     btn.onclick = () => addToCart(d);
 
-    const currentQty = cart.get(d.design_id)?.qty ?? 0;
     const qtySel = makeQtySelect(currentQty, (newQty) => {
-      upsertCartItemFromDesign(d, newQty);
+      // If they adjust qty before clicking "Add to Cart", we still treat it as a cart action
+      upsertCartFromDesign(d, newQty);
       updateCartPill();
       renderCartSummary();
       renderDesigns();
@@ -259,23 +265,19 @@ function renderDesigns() {
   });
 }
 
-// ---------------- Render: Cart Summary ----------------
 function renderCartSummary() {
-  if (!elCartSummary) return;
-
   const lines = cartLines();
 
   if (!lines.length) {
     elCartSummary.classList.add("muted");
     elCartSummary.textContent = "No items yet. Click “Add to Cart” on any design.";
-    if (elCartTotals) elCartTotals.style.display = "none";
+    elCartTotals.style.display = "none";
     return;
   }
 
   elCartSummary.classList.remove("muted");
   elCartSummary.innerHTML = "";
 
-  // sort
   lines.sort(
     (a, b) =>
       (a.state || "").localeCompare(b.state || "") ||
@@ -283,21 +285,12 @@ function renderCartSummary() {
       (a.design_name || "").localeCompare(b.design_name || "")
   );
 
-  // totals
-  const wholesaleTotal = lines.reduce(
-    (sum, i) => sum + Number(i.qty || 0) * Number(i.wholesale || 0),
-    0
-  );
-  const msrpTotal = lines.reduce(
-    (sum, i) => sum + Number(i.qty || 0) * Number(i.msrp || 0),
-    0
-  );
+  const wholesaleTotal = lines.reduce((sum, i) => sum + Number(i.qty) * Number(i.wholesale_ppu), 0);
+  const msrpTotal = lines.reduce((sum, i) => sum + Number(i.qty) * Number(i.msrp), 0);
 
-  if (elCartTotals && elTotalWholesale && elTotalMsrp) {
-    elCartTotals.style.display = "flex";
-    elTotalWholesale.textContent = money(wholesaleTotal);
-    elTotalMsrp.textContent = money(msrpTotal);
-  }
+  elCartTotals.style.display = "flex";
+  elTotalWholesale.textContent = money(wholesaleTotal);
+  elTotalMsrp.textContent = money(msrpTotal);
 
   lines.forEach((it) => {
     const row = document.createElement("div");
@@ -310,7 +303,7 @@ function renderCartSummary() {
 
     const meta = document.createElement("div");
     meta.className = "cart-meta";
-    meta.textContent = `${it.state} • ${it.school}  |  Wholesale: $${it.wholesale}  |  MSRP: $${it.msrp}`;
+    meta.textContent = `${it.state} • ${it.school} • ${it.style}  |  Wholesale: ${money(it.wholesale_ppu)} PPU  |  MSRP: ${money(it.msrp)}`;
 
     left.appendChild(title);
     left.appendChild(meta);
@@ -320,8 +313,11 @@ function renderCartSummary() {
 
     const qtySel = makeQtySelect(it.qty, (newQty) => {
       if (newQty === 0) cart.delete(it.design_id);
-      else cart.set(it.design_id, { ...it, qty: newQty });
-
+      else {
+        // recompute wholesale based on new qty
+        const wholesale_ppu = getWholesalePPU({ style: it.style }, newQty);
+        cart.set(it.design_id, { ...it, qty: newQty, wholesale_ppu });
+      }
       updateCartPill();
       renderCartSummary();
       renderDesigns();
@@ -343,12 +339,10 @@ function renderCartSummary() {
 
     row.appendChild(left);
     row.appendChild(right);
-
     elCartSummary.appendChild(row);
   });
 }
 
-// ---------------- Submit ----------------
 async function submitMockOrder() {
   setStatus("");
 
@@ -358,20 +352,24 @@ async function submitMockOrder() {
     return;
   }
 
-  if (!SCRIPT_URL || SCRIPT_URL.includes("SCRIPT_URL_HERE")) {
-    setStatus("Submit endpoint not connected. Please set SCRIPT_URL in app.js.");
-    return;
-  }
-
   const payload = {
     meta: {
-      company: (elCompany?.value || "").trim(),
-      name: (elName?.value || "").trim(),
-      email: (elEmail?.value || "").trim(),
-      notes: (elNotes?.value || "").trim(),
+      company: (elCompany.value || "").trim(),
+      name: (elName.value || "").trim(),
+      email: (elEmail.value || "").trim(),
+      notes: (elNotes.value || "").trim(),
       state: selectedState || ""
     },
-    items
+    items: items.map((it) => ({
+      state: it.state,
+      school: it.school,
+      design_id: it.design_id,
+      design_name: it.design_name,
+      style: it.style,
+      wholesale: it.wholesale_ppu,
+      msrp: it.msrp,
+      qty: it.qty
+    }))
   };
 
   try {
@@ -384,10 +382,12 @@ async function submitMockOrder() {
       body: JSON.stringify(payload)
     });
 
-    const data = await res.json().catch(() => ({}));
+    const text = await res.text();
+    let data = {};
+    try { data = JSON.parse(text); } catch { data = { ok: false, error: text }; }
 
     if (!res.ok || !data.ok) {
-      setStatus("Submission failed. Check Apps Script permissions/deployment.");
+      setStatus(`Submission failed: ${data.error || "Unknown error"} (HTTP ${res.status})`);
       elSubmitBtn.disabled = false;
       return;
     }
@@ -405,7 +405,6 @@ async function submitMockOrder() {
   }
 }
 
-// ---------------- Clear ----------------
 function clearCart() {
   cart.clear();
   updateCartPill();
@@ -414,11 +413,11 @@ function clearCart() {
   setStatus("Cleared cart.");
 }
 
-// ---------------- Events ----------------
-if (elStateSearch) elStateSearch.addEventListener("input", () => renderStates(elStateSearch.value));
-if (elSchoolSearch) elSchoolSearch.addEventListener("input", () => renderSchools(elSchoolSearch.value));
-if (elClearBtn) elClearBtn.addEventListener("click", clearCart);
-if (elSubmitBtn) elSubmitBtn.addEventListener("click", submitMockOrder);
+// Events
+elStateSearch.addEventListener("input", () => renderStates(elStateSearch.value));
+elSchoolSearch.addEventListener("input", () => renderSchools(elSchoolSearch.value));
+elClearBtn.addEventListener("click", clearCart);
+elSubmitBtn.addEventListener("click", submitMockOrder);
 
 if (elGoToCartBtn && elCartAnchor) {
   elGoToCartBtn.addEventListener("click", () => {
@@ -426,7 +425,7 @@ if (elGoToCartBtn && elCartAnchor) {
   });
 }
 
-// ---------------- Init ----------------
+// Init
 (async function init() {
   try {
     setStatus("Loading catalog...");
@@ -437,7 +436,6 @@ if (elGoToCartBtn && elCartAnchor) {
     renderStates("");
     updateCartPill();
     renderCartSummary();
-
     setStatus("");
   } catch (err) {
     console.error(err);
