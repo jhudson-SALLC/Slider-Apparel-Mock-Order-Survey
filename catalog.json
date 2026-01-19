@@ -1,0 +1,25 @@
+{
+  "Alabama": {
+    "University of Alabama": [
+      { "design_id": "AL-UA-S1-01", "design_name": "Alabama – Script Patch (S1)", "wholesale": 14, "msrp": 30 },
+      { "design_id": "AL-UA-S3-01", "design_name": "Alabama – Rope Trucker (S3)", "wholesale": 15, "msrp": 32 }
+    ]
+  },
+  "Oregon": {
+    "Oregon State University": [
+      { "design_id": "OR-OSU-S1-01", "design_name": "Oregon State – Beaver Patch (S1)", "wholesale": 14, "msrp": 30 },
+      { "design_id": "OR-OSU-S4-01", "design_name": "Oregon State – Retro Wordmark (S4)", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Oregon": [
+      { "design_id": "OR-UO-S2-01", "design_name": "Oregon – Classic O (S2)", "wholesale": 14, "msrp": 30 }
+    ]
+  },
+  "Texas": {
+    "Texas A&M University": [
+      { "design_id": "TX-TAMU-S1-01", "design_name": "Texas A&M – Maroon Patch (S1)", "wholesale": 14, "msrp": 30 }
+    ],
+    "University of Texas at Austin": [
+      { "design_id": "TX-UTA-S3-01", "design_name": "Texas – Longhorn Rope (S3)", "wholesale": 15, "msrp": 32 }
+    ]
+  }
+}
