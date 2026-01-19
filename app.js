@@ -98,6 +98,81 @@ function renderSchools(filter = "") {
 
 function renderDesigns() {
   elDesigns.innerHTML = "";
+function renderCartSummary() {
+  if (!elCartSummary) return;
+
+  const items = Array.from(cart.values()).filter(i => Number(i.qty) > 0);
+
+  if (!items.length) {
+    elCartSummary.classList.add("muted");
+    elCartSummary.textContent = "No items yet. Add quantities from any school.";
+    return;
+  }
+
+  elCartSummary.classList.remove("muted");
+  elCartSummary.innerHTML = "";
+
+  // Sort by state, school, then design name
+  items.sort((a, b) =>
+    (a.state || "").localeCompare(b.state || "") ||
+    (a.school || "").localeCompare(b.school || "") ||
+    (a.design_name || "").localeCompare(b.design_name || "")
+  );
+
+  items.forEach((it) => {
+    const row = document.createElement("div");
+    row.className = "item cart-row";
+
+    const left = document.createElement("div");
+    const title = document.createElement("div");
+    title.textContent = it.design_name;
+
+    const meta = document.createElement("div");
+    meta.className = "cart-meta";
+    meta.textContent = `${it.state} • ${it.school}  |  Wholesale: $${it.wholesale}  |  MSRP: $${it.msrp}`;
+
+    left.appendChild(title);
+    left.appendChild(meta);
+
+    const right = document.createElement("div");
+    right.className = "cart-actions";
+
+    const qty = document.createElement("input");
+    qty.className = "input";
+    qty.type = "number";
+    qty.min = "0";
+    qty.step = "1";
+    qty.value = it.qty;
+
+    qty.oninput = () => {
+      const newQty = Math.max(0, Math.floor(Number(qty.value || 0)));
+      if (newQty === 0) cart.delete(it.design_id);
+      else cart.set(it.design_id, { ...it, qty: newQty });
+
+      updateCartPill();
+      renderCartSummary();
+      renderDesigns(); // keeps current school page in sync
+    };
+
+    const remove = document.createElement("button");
+    remove.className = "small-btn";
+    remove.textContent = "Remove";
+    remove.onclick = () => {
+      cart.delete(it.design_id);
+      updateCartPill();
+      renderCartSummary();
+      renderDesigns();
+    };
+
+    right.appendChild(qty);
+    right.appendChild(remove);
+
+    row.appendChild(left);
+    row.appendChild(right);
+
+    elCartSummary.appendChild(row);
+  });
+}
 
   if (!selectedState || !selectedSchool) {
     elDesigns.classList.add("muted");
