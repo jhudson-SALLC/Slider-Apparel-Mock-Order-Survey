@@ -32,7 +32,6 @@ select.input{appearance:none;}
 .small-btn{padding:8px 10px;border-radius:10px;border:1px solid #2d3550;background:transparent;color:var(--t);cursor:pointer;}
 .status{margin-top:10px;color:var(--m);font-size:13px;min-height:18px;}
 .cart-pill{border:1px solid #242a3b;background:#0d0f16;border-radius:999px;padding:8px 10px;color:var(--m);font-size:13px;white-space:nowrap;}
-
 .sep{border:0;border-top:1px solid #20263a;margin:16px 0;}
 .form-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:10px 0 12px;}
 .actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;}
@@ -53,7 +52,7 @@ select.input{appearance:none;}
   gap:8px;
   align-items:center;
 }
-.cart-actions .input{width:140px;}
+.cart-actions .input{width:160px;}
 .totals{
   display:flex;
   justify-content:space-between;
