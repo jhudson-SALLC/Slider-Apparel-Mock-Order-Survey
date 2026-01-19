@@ -11,9 +11,9 @@
     <div class="wrap bar-inner">
       <div>
         <h1>Slider Apparel – Mock Order</h1>
-        <p class="sub">Select a state, choose a school, pick designs, and enter quantities.</p>
+        <p class="sub">Pick a state → choose a school → add designs to cart → select quantities → submit.</p>
       </div>
-      <div class="cart-pill" id="cartPill">0 total qty</div>
+      <div class="cart-pill" id="cartPill">0 lines • 0 total qty</div>
     </div>
   </header>
 
@@ -36,18 +36,29 @@
     </section>
 
     <section class="panel wide">
-      <div class="panel-head">
-        <h2>3) Select Designs & Quantities</h2>
-        <div class="crumb" id="schoolCrumb">No school selected</div>
+      <div class="panel-head split">
+        <div>
+          <h2>3) Designs</h2>
+          <div class="crumb" id="schoolCrumb">No school selected</div>
+        </div>
+        <button class="btn ghost" id="goToCartBtn" type="button">Jump to Cart</button>
       </div>
 
       <div id="designs" class="cards muted">Select a school</div>
 
       <hr class="sep" />
-<h3>Mock Order Summary</h3>
-<div id="cartSummary" class="list muted">No items yet. Add quantities from any school.</div>
 
-<hr class="sep" />
+      <h3 id="cartAnchor">Mock Order Cart</h3>
+      <p class="sub2">Add designs from any school. Then choose a quantity from the dropdown.</p>
+
+      <div id="cartSummary" class="list muted">No items yet. Click “Add to Cart” on any design.</div>
+
+      <div class="totals" id="cartTotals" style="display:none;">
+        <div><span class="muted">Total Wholesale:</span> <span id="totalWholesale">$0</span></div>
+        <div><span class="muted">Total MSRP (suggested):</span> <span id="totalMsrp">$0</span></div>
+      </div>
+
+      <hr class="sep" />
 
       <h3>Submit Mock Order</h3>
       <div class="form-grid">
@@ -58,8 +69,8 @@
       </div>
 
       <div class="actions">
-        <button class="btn ghost" id="clearBtn">Clear</button>
-        <button class="btn" id="submitBtn">Submit Mock Order</button>
+        <button class="btn ghost" id="clearBtn" type="button">Clear Cart</button>
+        <button class="btn" id="submitBtn" type="button">Submit Mock Order</button>
       </div>
 
       <div id="status" class="status"></div>
