@@ -19,6 +19,7 @@ const elStateSearch = document.getElementById("stateSearch");
 const elSchoolSearch = document.getElementById("schoolSearch");
 const elCartPill = document.getElementById("cartPill");
 const elStatus = document.getElementById("status");
+const elCartSummary = document.getElementById("cartSummary");
 
 const elCompany = document.getElementById("company");
 const elName = document.getElementById("name");
